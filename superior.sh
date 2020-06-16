@@ -60,5 +60,7 @@ fi
 
 # Build ROM
 source build/envsetup.sh
+export KBUILD_BUILD_USER=Smokey
+export KBUILD_BUILD_HOST=StormBreaker
 lunch superior_mido-userdebug
 mka bacon -j"$jobs"
