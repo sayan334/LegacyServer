@@ -62,5 +62,6 @@ fi
 source build/envsetup.sh
 export KBUILD_BUILD_USER=Smokey
 export KBUILD_BUILD_HOST=StormBreaker
+export SELINUX_IGNORE_NEVERALLOWS=true
 lunch aosp_mido-userdebug
 mka bacon -j"$jobs"
